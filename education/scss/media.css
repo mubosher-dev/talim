@@ -1,0 +1,107 @@
+@media screen and (max-width: 768px) {
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+  .nav .navbar-nav {
+    display: none;
+  }
+  .nav .navbar-nav.active {
+    position: absolute;
+    width: 100%;
+    display: block;
+    z-index: 200;
+    top: 3.2rem;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+  }
+  .nav .navbar-nav.active a {
+    display: block;
+    padding: 20px;
+    width: 100%;
+  }
+  .nav .btn {
+    display: block;
+  }
+  .home .me .home-item .home-wrapper {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .home .me .home-item .home-wrapper .home-text {
+    width: 80%;
+  }
+  .home .me .home-item .home-wrapper .home-text h1 {
+    font-size: 24px;
+  }
+  .home .me .home-item .home-wrapper .home-text p {
+    font-size: 1.4rem;
+  }
+  .service .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .service .row .service_item {
+    width: 80% !important;
+    margin: 10px auto;
+  }
+  .service .row .service_item .ser_img {
+    width: 200px;
+    height: 200px;
+  }
+  .about-us .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about-us .row div {
+    width: 80%;
+  }
+  footer h2 {
+    font-size: 1.2rem;
+  }
+  .boxs {
+    width: 200px !important;
+    height: 250px !important;
+    -o-object-fit: contain !important;
+       object-fit: contain !important;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  html, body {
+    overflow-x: hidden;
+  }
+  .service .row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .service .row .service_item {
+    width: 40%;
+    margin: 10px 0;
+  }
+  .about-us .row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .about-us .row .text {
+    width: 80%;
+  }
+  .about-us .row div {
+    width: 60%;
+    margin: 10px auto;
+  }
+}
+
+@media screen and (max-width: 1034) {
+  html, body {
+    overflow-x: hidden;
+  }
+}
+/*# sourceMappingURL=media.css.map */

@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: 0.3s ease;
+    scroll-behavior: smooth;
+    outline: none;
+    border: none;
+}
+body{
+    display: flex;
+    height: 100vh;
+    font-family: sans-serif;
+    position: relative;
+    
+}
+/* start navbar styles */
+.navbar{
+    height: 100vh;
+    width: 20%;
+    background: #000016;
+    padding: 20px;
+    overflow-y: scroll;
+}
+.logo{
+    font-size: 20px;
+    color: #fff;
+    list-style: none;
+    padding: 10px;
+}
+.logo span{
+    color: red;
+}
+.logo a{
+    color: #fff;
+    cursor: pointer;
+}
+.logo:hover{
+    background: #333;
+}
+.nav-link{
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    list-style:none;
+}
+.nav-link:hover{
+    background: #333;
+}
+.nav-link.active{
+    background: #333033;
+}
+/* finish navbar styles  */
+
+/* start to priveiw sections styles */
+.container{
+    margin:0 100px;
+    width: 800px;
+    overflow-y: hidden;
+}
+
+.video{
+    width: 600px!important;
+    height: 400px!important;
+    object-fit: cover;
+    object-position: center;
+}
+
+.vidio-items{
+    height: 100vh;
+    margin-bottom: 100px;
+    display: none;
+    width:800px;
+}
+.vidio-items.active{
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    display: block;
+    z-index: 10000;
+}
+.video-caption{
+    margin: 10px 0;
+    display: none;
+}
+.vidio-items.active .video-caption{
+    display: block;
+}
+.vidio-items h1 {
+    font-size: 2rem;
+    color: #000016;
+    font-weight: 400;
+}
+.vidio-items p {
+    font-size: 18px;
+    color: #333;
+}
+.vidio-wrapper{
+    overflow: hidden;
+    height: 78vh;
+    position: relative;
+}
+.doc{
+    padding: 10px 2px;
+    border: 2px solid #000016;
+    cursor: pointer;
+    margin: 10px 0;
+}
+.doc:hover{
+    background: #333;
+    color: #fff;
+}
+
+.lesson-caption{
+    position: absolute;
+    top: 0%;
+    z-index: 100000;
+    left: 77%;
+    overflow: inherit;
+}
+.watch{
+    display: none;
+}
+.watch.active{
+    position: absolute;
+    top: 0;
+    width: 80%;
+    height: 100vh;
+    display: block;
+    left: 0;
+}
+/* finish to priveiw sections styles  */
+
+/* btn styles */
+.mBtn{
+    position: fixed;
+    left: 21%;
+    font-size: 24px;
+    top: 20px;
+    cursor:pointer;
+}
+
+.navbar.active{
+    width: 5%;
+}
+.navbar.active .navbar-nav{
+    display: none;
+    opacity: 0;
+}
+.mBtn.left{
+    left: 8%;
+}
+
+

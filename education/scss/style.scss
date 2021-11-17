@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+    transition: .3s ease-in;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+html,body{
+    scroll-behavior: smooth;
+}
+img{
+    object-fit: contain;
+    object-position:center;
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background: rgba($color: #000000, $alpha: 0.8);
+    .btn{
+        padding: 5px;
+        color: orange;
+        cursor: pointer;
+        font-size: 1.7rem;
+        display: none;
+        &:focus{
+            outline: 1px solid black;
+            border: none;
+        }
+    }
+    &.active{
+        background: lightblue;
+        position: fixed;
+        width: 100%;
+        z-index: 10000;
+    }
+    .logo{
+        color: orange;
+        font-size: 20px;
+        span {
+            color: red;
+        }
+    }
+    .navbar-nav {
+        a{
+            color: white;
+            cursor: pointer;
+            margin: 0 10px;
+            font-size: 17px;
+            &:hover{
+                color: orange;
+            }
+        }
+        .active{
+            color: orange;
+        }
+    }
+}
+
+.home{
+    height: 80vh;
+    width: 100%;
+    overflow-x: hidden;
+    .me{
+        width: 100%;
+        height: 80vh;
+        .home-item{
+            width: 100%;
+            position: relative;
+            height: 100%;
+            img{
+                width: 100%;
+                height: 80vh;
+                object-fit: cover;
+                object-position: center;
+            }
+            .home-wrapper{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                background: rgba(0, 0, 0, 0.5);
+                .home-text{
+                    margin: 100px 0;
+                    width: 40%;
+                    h1{
+                        color: #ffff;
+                        font-size: 40px;
+                        margin: 10px 0;
+                        font-weight: 400;
+                    }
+                    p{
+                        color: #fff;
+                        font-weight: 300;
+                        font-size: 20px;
+                        margin: 10px 0;
+                    }
+                    a{
+                        color:black;
+                        background: #fff;
+                        padding: 10px;
+                        border-radius: 3px;
+                        margin: 10px 0;
+                        &:hover{
+                            background: #f00;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.service {
+    margin: 100px 0;
+    .heading{
+        margin: 10px 0;
+        text-align: center;
+    }
+    .row{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .service_item{
+        width: 30%;
+        padding: 10px;
+        border: 1px solid #000016;
+        .ser_img{
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+            margin: auto;
+        }
+        h1{
+            font-size: 2rem;
+            color: #000016;
+            text-align:center;
+        }
+        p{
+            color: #333;
+            text-align: center;
+            margin: 10px 0;
+        }
+        .btn-outline-primary{
+            display: block;
+            border: 1px solid lightblue;
+            padding: 10px;
+            width:80%;
+            margin: auto;
+            color: blue;
+            text-align: center;
+            &:hover{
+                box-shadow: 0 0 10px 10px lightblue;
+            }
+        }
+    }
+}
+
+.about-us{
+    h1{
+        text-align: center;
+    }
+    .row{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 100px 0; 
+    }
+    .text{
+        width: 40%;
+        h1{
+            font-size: 2rem;
+            color: #000016;
+        }
+        p{
+            color: #333;
+            font-size: 1.5rem;
+            margin: 10px 0;
+            text-align: center;
+        }
+    }
+    .img{
+        width: 600px;
+        height: 400px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+footer{
+    padding: 20px;
+    background: #000016;
+    color: #fff;
+    text-align: center;
+    
+}
